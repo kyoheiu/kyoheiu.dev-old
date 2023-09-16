@@ -1,5 +1,13 @@
 <script lang="ts">
-    import {GithubSolid, CodeBranchOutline, PenNibOutline, PenOutline, CaptioningOutline, DiscordSolid, MailBoxOutline} from 'flowbite-svelte-icons';
+	import {
+		GithubSolid,
+		CodeBranchOutline,
+		PenNibOutline,
+		PenOutline,
+		CaptioningOutline,
+		DiscordSolid,
+		MailBoxOutline
+	} from 'flowbite-svelte-icons';
 
 	type Link = {
 		name: string;
@@ -38,19 +46,19 @@
 		class="flex flex-row items-center justify-center text-slate-800 bg-slate-200 rounded-md w-48 h-10 m-1 p-2"
 	>
 		{#if link.name === 'GitHub'}
-        <GithubSolid />
+			<GithubSolid class="h-4 w-4" />
 		{:else if link.name === 'sourcehut'}
-        <CodeBranchOutline />
+			<CodeBranchOutline class="h-4 w-4" />
 		{:else if link.name === 'blog (ja)'}
-        <PenNibOutline />
+			<PenNibOutline class="h-4 w-4" />
 		{:else if link.name === 'zenn (ja)'}
-        <PenOutline />
+			<PenOutline class="h-4 w-4" />
 		{:else if link.name === 'TED Translation'}
-        <CaptioningOutline />
+			<CaptioningOutline class="h-4 w-4" />
 		{:else if link.name === 'Discord@kyoheiu'}
-        <DiscordSolid />
+			<DiscordSolid class="h-4 w-4" />
 		{:else if link.name === 'im@kyoheiu.dev'}
-        <MailBoxOutline />
+			<MailBoxOutline class="h-4 w-4" />
 		{/if}
 		&nbsp;
 		<span class="text-slate-800 break-all">
