@@ -13,7 +13,7 @@
 
 	<!-- Short Bio -->
 	<div class="text-center m-2 mb-6 w-48">
-		Husband, father, editor, working student@UoL, and developer in the wild.
+		Husband, father, editor, to-be working student@UoL, and developer in the wild.
 	</div>
 
 	<Links />
