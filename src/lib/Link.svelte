@@ -43,7 +43,7 @@
 {#each links as link}
 	<a
 		href={link.link}
-		class="flex flex-row items-center justify-center text-slate-800 bg-slate-200 rounded-md w-48 h-10 m-1 p-2"
+		class="flex flex-row items-center justify-center text-slate-800 bg-slate-200 rounded-md w-48 h-10 m-1"
 	>
 		{#if link.name === 'GitHub'}
 			<GithubSolid class="h-4 w-4" />
@@ -61,8 +61,6 @@
 			<MailBoxOutline class="h-4 w-4" />
 		{/if}
 		&nbsp;
-		<span class="text-slate-800 break-all">
-			{link.name}
-		</span>
+		<span class="mt-1">{link.name}</span>
 	</a>
 {/each}

@@ -9,11 +9,11 @@
 	</div>
 
 	<!-- Title -->
-	<h1 class="text-2xl m-2">Kyohei Uto</h1>
+	<h1 class="text-2xl m-2 mt-4">Kyohei Uto</h1>
 
 	<!-- Short Bio -->
 	<div class="text-center m-2 mb-6 w-48">
-		Husband, father, editor, to-be working student@UoL, and developer in the wild.
+		Husband, father, editor, working student@UoL, and developer in the wild.
 	</div>
 
 	<Links />
