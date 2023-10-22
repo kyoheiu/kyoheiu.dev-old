@@ -18,6 +18,15 @@ Fast, simple, and easy to configure & use.
 
 <a id="new-release"></a>
 
+## v2.9.0 (2023-10-22)
+
+### Added
+- Change color of untracked/changed files or directories containing such files. Default color is Red(1). You can change it in the config file.
+  - Add `git2`.
+  
+### Fixed
+- Explicitly ignore the key release events for Windows.
+
 ## v2.8.1 (2023-08-25)
 
 ### Fixed
@@ -52,21 +61,6 @@ Fast, simple, and easy to configure & use.
 - Upgrade dependencies.
 - Update syntect version to v5.1.0. This fixes the handling of multibyte chars in the preview area.
 - Allow file name `config.yml` in addition to `config.yaml` for the configuration.
-
-## v2.6.0 (2023-07-22)
-
-### Added
-
-- Allow `<C-r>` in command line: Paste item name(s) in register. e.g. `<C-r>"` pastes item name in unnamed register.
-- Allow wild card in command line: e.g. `:zip test *.md` works now.
-- Ability to `cd {absolute/relative path}`.
-- Ability to jump backward / forward (`<C-o>`, `<C-i>` respectively)
-
-## v2.5.0 (2023-07-13)
-
-### Added
-
-- Ability to exit to LWD (last working directory): See Integrations for details.
 
 For more details, see `CHANGELOG.md` in the
 [repository](https://github.com/kyoheiu/felix).
@@ -343,11 +337,12 @@ log files       : $PROFILE\AppData\Local\felix\log
 #     LightWhite       // 15
 #     Rgb(u8, u8, u8)
 #     AnsiValue(u8)
-# Default to LightCyan(dir), LightWhite(file), and LightYellow(symlink).
+# Default to LightCyan(dir), LightWhite(file), LightYellow(symlink) and Red(changed/untracked files in git repositories).
 # color:
 #   dir_fg: LightCyan
 #   file_fg: LightWhite
 #   symlink_fg: LightYellow
+#   dirty_fg: Red
 ```
 
 ### Command settings
