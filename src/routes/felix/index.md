@@ -362,3 +362,17 @@ exec:
 then, `.jpg`, `.jpeg`, `.png`, `.gif` and `.svg` files are opened by
 `feh -. <file-name>`, `.pdf` files by `zathura <file-name>` and others by
 `nvim <file-name>` .
+
+### About `Rgb` and `AnsiValue`
+
+You can configure these colors like this:
+
+```
+color:
+  dir_fg: LightCyan
+  file_fg: !AnsiValue 120
+  symlink_fg: LightYellow
+  dirty_fg: !Rgb [124, 30, 40]
+```
+
+cf: https://docs.rs/serde_yaml/latest/serde_yaml/#using-serde-derive
