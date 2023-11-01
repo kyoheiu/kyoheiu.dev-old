@@ -1,6 +1,6 @@
 {
 	"name": "kyoheiu.dev-svelte",
-	"version": "0.0.5",
+	"version": "20231102",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
