@@ -18,6 +18,13 @@ Fast, simple, and easy to configure & use.
 
 <a id="new-release"></a>
 
+## v2.10.0 (2023-11-01)
+
+### Added
+- `bat` integration: If `bat` installed, felix automatically adds syntax highlighting to the text preview.
+  - Add `has_bat` field to `State`.
+  - Add `FxError::InvalidPath` to handle invalid unicode in file path.
+
 ## v2.9.0 (2023-10-22)
 
 ### Added
@@ -50,17 +57,6 @@ Fast, simple, and easy to configure & use.
 ### Removed
 
 - Remove `syntect` and syntax highlighting in the preview area. This will improve build and start-up times, and resolve the handling of wide chars such as CJK.
-
-## New Release
-
-## v2.7.0 (2023-08-05)
-
-### Changed
-
-- Minimal supported rust version is now 1.67.1
-- Upgrade dependencies.
-- Update syntect version to v5.1.0. This fixes the handling of multibyte chars in the preview area.
-- Allow file name `config.yml` in addition to `config.yaml` for the configuration.
 
 For more details, see `CHANGELOG.md` in the
 [repository](https://github.com/kyoheiu/felix).
@@ -130,14 +126,14 @@ _If this is not set, exiting to LWD will fail and show the error message._
 
 #### Others
 
-In addition, you can use felix more conveniently by installing the following two
-apps:
+In addition, you can use felix more conveniently by installing the following apps:
 
 - [zoxide](https://github.com/ajeetdsouza/zoxide): A smarter `cd` command, which
   enables you to jump to a directory that matches the keyword in felix.
 - [chafa](https://hpjansson.org/chafa/): Terminal graphics for the 21st century,
   by which you can preview images in felix. **_chafa must be v1.10.0 or
   later._**
+- [bat](https://github.com/sharkdp/bat): A *cat(1)* clone. Add syntax highlighting to the text preview with bat.
 
 These apps do not need any configuration to use with felix!
 

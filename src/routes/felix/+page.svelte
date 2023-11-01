@@ -9,7 +9,7 @@
 	<a href="https://crates.io/crates/felix">crates.io</a>
 	<a href="https://github.com/kyoheiu/felix">repository</a>
 </div>
-<div class="flex justify-center text-6xl font-extrabold mt-8">felix</div>
+<div class="flex justify-center text-6xl font-extrabold italic mt-8">felix</div>
 <div
 	class="prose
             prose-slate
